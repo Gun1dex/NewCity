@@ -1,0 +1,23 @@
+.accueil{
+    background-color: #00103c;
+    width: auto;
+}
+
+.imgBanner{
+    height: 100%;
+}
+
+#textCenter{
+    text-align: center;
+}
+
+.mainMenu{
+    background: url("../img/accueil/nuclearCentral.jpg") no-repeat center;
+    border-color: black;
+    border-style: dotted;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  max-height: 450px;
+}
