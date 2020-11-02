@@ -1,51 +1,35 @@
-<!DOCTYPE html>
-<html>
+<?php
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/debug.css"> -->
-    <title>NewCity </title>
+ob_start();
 
+?>
 
-
-
-</head>
-
-<body class="main">
-    <section class="accueil">
-        <div class="columns is-mobile is-centered">
-            <div class="column is-half" id="textCenter">
-                <img src="../web/img/accueil/banner_accueil.png" class="imgBanner" alt="banniere">
-            </div>
-        </div>
-    </section>
-    <section class="menu">
-        <div class="columns is-mobile is-centered">
-            <div class="column is-half" id="textCenter">
-                <article>
+    <div class="columns is-mobile is-centered">
+        <div class="column is-half" id="textCenter">
+            <article class="mainMenu">
+                <div class="content">
+                    <p class="title"> NewCity</p>
                     <div class="content">
-                        <p class="title"> NewCity</p>
-                        <div class="content">
-                            test
+                        <div class="columns is-mobile is-centered">
+                            <div class="column is-half" id="textCenter">
+                                <button><a href="index.php?page=jeu">Jouer</a></button>
+                            </div>
+                        </div>
+                        <div class="columns is-mobile is-centered">
+                            <div class="column is-half" id="textCenter">
+                                <button><a href="index.php?page=jeu"> Comment Jouer ?</a></button>
+
+                            </div>
                         </div>
                     </div>
-                </article>
-            </div>
-
+                </div>
+            </article>
         </div>
 
-    </section>
+    </div>
 
 
+<?php
+$contenu = ob_get_clean();
 
-
-
-
-
-</body>
-
-</html>
+require_once("../src/vue/base.php");

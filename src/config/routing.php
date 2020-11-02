@@ -3,6 +3,7 @@
 function getPage(){
 
     $lesPages['accueil']="actionAccueil";
+    $lesPages['jeu']="actionJeu";
 
     if(isset($_GET['page'])){
         $page = $_GET['page'];
@@ -14,7 +15,7 @@ function getPage(){
         $page = 'accueil';
     }
 
-    $contenu = $lesPages['accueil'];
+    $contenu = $lesPages[$page];
 
     return $contenu;
 }
