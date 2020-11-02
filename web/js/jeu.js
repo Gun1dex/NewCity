@@ -1,4 +1,5 @@
-import { Plateau } from './plateau/plateau'
+const { IHM } = require("./IHM");
 
-var plateau = new Plateau();
-plateau.initPlateau();
+var ihm = new IHM();
+ihm.init();
+ihm.afficherPlateau();

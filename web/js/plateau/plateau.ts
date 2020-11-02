@@ -9,4 +9,8 @@ export class Plateau {
     initPlateau() {
         this.tableau = mock_plateau;
     }
+
+    getTableau() {
+        return this.tableau;
+    }
 }
