@@ -5,24 +5,24 @@ export var mock_plateau: ICase[][] = [
     [
         {
             id: batimentCategorie.MAISON,
-            imageUrl: "../../img/maison",
+            imageUrl: "../../img/roadTile1.png",
             categorie: imageCategorie.BATIMENT
         },
         {
             id: batimentCategorie.ARBRE,
-            imageUrl: "../../img/arbre",
+            imageUrl: "../../img/roadTile2.png",
             categorie: imageCategorie.BATIMENT
         }
     ],
     [
         {
             id: batimentCategorie.ARBRE,
-            imageUrl: "../../img/arbre",
+            imageUrl: "../../img/roadTile2.png",
             categorie: imageCategorie.BATIMENT
         },
         {
             id: batimentCategorie.VIDE,
-            imageUrl: "../../img/vide",
+            imageUrl: "../../img/roadTile3.png",
             categorie: imageCategorie.VEGETATION
         }
     ]
