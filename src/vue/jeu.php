@@ -14,11 +14,11 @@ ob_start();
         <div id="affichage_menu">
         </div>
     </div>
-    <div class="column is-9" style="text-align:center;">
+    <div class="column is-8" style="text-align:center;">
         <div style="line-height:0px; background-color:#80be1f;" id="affichage_jeu">
         </div>
     </div>
-    <div class="column is-1">
+    <div class="column is-2">
         objectif
     </div>
 

@@ -36,9 +36,8 @@ export class IHM {
         menu.forEach(colonne => {
             colonne.forEach(ligne => {
                 html += `${ligne.nom}`;
-                html += `<br><img src="${ligne.imageUrl}" style='height:60px'><br>`;
+                html += `<br><img src="${ligne.imageUrl}" style='height:50px'><br>`;
             })
-            //html += "<br>";
         });
         document.getElementById("affichage_menu").innerHTML = html;
     }
