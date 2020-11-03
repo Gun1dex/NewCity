@@ -1,13 +1,19 @@
-import { Plateau } from './plateau/plateau.js';
+import { Plateau } from './plateau.js';
+import { Menu } from './menu.js';
+
 
 export class IHM {
     plateau;
+    menu;
 
     constructor() {}
 
     init() {
         this.plateau = new Plateau();
+        this.menu = new Menu();
+
         this.plateau.initPlateau();
+        this.menu.initMenu();
     }
 
     afficherPlateau() {
@@ -21,5 +27,19 @@ export class IHM {
             html += "<br>";
         });
         document.getElementById("affichage_jeu").innerHTML = html;
+    }
+
+    afficherMenu() {
+        const menu = this.menu.getMenu();
+        var html = "";
+
+        menu.forEach(colonne => {
+            colonne.forEach(ligne => {
+                html += `${ligne.nom}`;
+                html += `<img src="${ligne.imageUrl}" style='height:60px'>`;
+            })
+            //html += "<br>";
+        });
+        document.getElementById("affichage_menu").innerHTML = html;
     }
 }

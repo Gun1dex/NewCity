@@ -2,30 +2,35 @@ import { batimentCategorie, imageCategorie } from '../models/categorie.js';
 
 export const vide = {
     id: batimentCategorie.VIDE,
+    nom: "Vide",
     imageUrl: "./img/jeu/fonts/herbe.png",
     categorie: imageCategorie.RIEN
 };
 
 export const arbre = {
     id: batimentCategorie.ARBRE,
+    nom: "Arbre",
     imageUrl: "./img/jeu/vegetations/petitArbre.png",
     categorie: imageCategorie.VEGETATION
 };
 
 export const maison = {
     id: batimentCategorie.MAISON,
+    nom: "Maison",
     imageUrl: "./img/jeu/batiments/maison.png",
     categorie: imageCategorie.BATIMENT
 };
 
 export const ville = {
     id: batimentCategorie.MAISON,
+    nom: "Ville",
     imageUrl: "./img/jeu/batiments/ville.png",
     categorie: imageCategorie.BATIMENT
 };
 
 export const villeFleurie = {
     id: batimentCategorie.MAISON,
+    nom: "Ville fleurie",
     imageUrl: "./img/jeu/batiments/ville-fleurie.png",
     categorie: imageCategorie.BATIMENT
 };
