@@ -16,7 +16,7 @@ export class IHM {
         
         tableau.forEach(colonne => {
             colonne.forEach(ligne => {
-                html += `<img src="${ligne.imageUrl}">`;
+                html += `<img src="${ligne.imageUrl}" style='height:40px'>`;
             })
             html += "<br>";
         });
