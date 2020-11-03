@@ -36,7 +36,7 @@ export class IHM {
         menu.forEach(colonne => {
             colonne.forEach(ligne => {
                 html += `${ligne.nom}`;
-                html += `<img src="${ligne.imageUrl}" style='height:60px'>`;
+                html += `<br><img src="${ligne.imageUrl}" style='height:60px'><br>`;
             })
             //html += "<br>";
         });
