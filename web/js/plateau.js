@@ -1,4 +1,4 @@
-import * as mock from "../mocks/mock-plateau.js";
+import * as mock from "./mocks/mock-plateau.js";
 
 export class Plateau {
     tableau = [];

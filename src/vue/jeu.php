@@ -11,11 +11,11 @@ ob_start();
 </div>
 <div class="columns mobile">
     <div class="column is-2">
-        test2
+        <div id="affichage_menu">
+        </div>
     </div>
     <div class="column is-10">
         <div class="colum is-11" style="line-height:0px; background-color:#80be1f;" id="affichage_jeu">
-
         </div>
     </div>
 
