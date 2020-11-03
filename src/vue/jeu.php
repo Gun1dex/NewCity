@@ -3,10 +3,24 @@
 ob_start();
 
 ?>
+<div class="columns">
+    <div class="column">
+        <h1>Page du jeu</h1>
+        <button><a href="index.php?pade=accueil">Accueil</a></button>
+    </div>
+</div>
+<div class="columns mobile">
+    <div class="column is-2">
+        test2
+    </div>
+    <div class="column is-10">
+        <div class="colum is-11" style="line-height:0px; background-color:#80be1f;" id="affichage_jeu">
 
-<h1>Page du jeu</h1>
-<button><a href="index.php?pade=accueil">Accueil</a></button>
-<div style="line-height:0px" id="affichage_jeu"></div>
+        </div>
+    </div>
+
+</div>
+
 <script type="module" src="./js/jeu.js"></script>
 <?php
 

@@ -12,12 +12,12 @@ ob_start();
                 <div class="content">
                     <div class="columns is-mobile is-centered">
                         <div class="column is-half" id="textCenter">
-                            <button><a href="index.php?page=jeu"><?php echo $play; ?></a></button>
+                            <button><a href="index.php?page=jeu">Jouer</a></button>
                         </div>
                     </div>
                     <div class="columns is-mobile is-centered">
                         <div class="column is-half" id="textCenter">
-                            <button><a href="index.php?page=jeu"> <?php echo $howPlay; ?></a></button>
+                            <button><a href="index.php?page=jeu"> Comment Jouer ?</a></button>
 
                         </div>
                     </div>
