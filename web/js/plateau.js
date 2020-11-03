@@ -23,6 +23,9 @@ export class Plateau {
                     case 4:
                         element = mock.villeFleurie;
                         break;
+                    case 5:
+                        element = mock.usine;
+                        break;
                     default:
                         element = mock.vide;
                 }
