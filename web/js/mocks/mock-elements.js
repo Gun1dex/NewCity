@@ -4,70 +4,80 @@ import { imageCategorie } from '../models/categorie.js';
 export const herbe = {
     nom: "Vide",
     imageUrl: "./img/jeu/fonts/herbe.png",
-    categorie: imageCategorie.RIEN
+    categorie: imageCategorie.RIEN,
+    valeur: 1
 };
 
 // 1
 export const arbre = {
     nom: "Arbre",
     imageUrl: "./img/jeu/vegetations/arbre.png",
-    categorie: imageCategorie.VEGETATION
+    categorie: imageCategorie.VEGETATION,
+    valeur: 3
 };
 
 // 2
 export const foret = {
     nom: "Foret",
     imageUrl: "./img/jeu/vegetations/foret.png",
-    categorie: imageCategorie.VEGETATION
+    categorie: imageCategorie.VEGETATION,
+    valeur: 10
 };
 
 // 10
 export const maison = {
     nom: "Maison",
     imageUrl: "./img/jeu/batiments/maison.png",
-    categorie: imageCategorie.BATIMENT
+    categorie: imageCategorie.BATIMENT,
+    valeur: 2
 };
 
 // 11
 export const ville = {
     nom: "Ville",
     imageUrl: "./img/jeu/batiments/ville.png",
-    categorie: imageCategorie.BATIMENT
+    categorie: imageCategorie.BATIMENT,
+    valeur: 7
 };
 
 // 12
 export const villeFleurie = {
     nom: "Ville fleurie",
     imageUrl: "./img/jeu/batiments/ville-fleurie.png",
-    categorie: imageCategorie.BATIMENT
+    categorie: imageCategorie.BATIMENT,
+    valeur: 5
 };
 
 // 13
 export const usine = {
     nom: "Usine",
     imageUrl: "./img/jeu/batiments/usine.png",
-    categorie: imageCategorie.POLUTION
+    categorie: imageCategorie.POLLUTION,
+    valeur: 10
 };
 
 // 20
 export const panneau_solaire = {
     nom: "Panneau solaire",
     imageUrl: "./img/jeu/energies/panneau_solaire.png",
-    categorie: imageCategorie.ENERGIE_RENOUVELABLE
+    categorie: imageCategorie.ENERGIE_RENOUVELABLE,
+    valeur: 4
 };
 
 // 21
 export const centrale_nucleaire = {
     nom: "Centrale Nucléaire",
     imageUrl: "./img/jeu/energies/centrale.png",
-    categorie: imageCategorie.ENERGIE_NON_RENOUVELABLE
+    categorie: imageCategorie.ENERGIE_NON_RENOUVELABLE,
+    valeur: 5
 };
 
 // 22
 export const eolienne = {
     nom: "Eolienne",
     imageUrl: "./img/jeu/energies/eolienne.png",
-    categorie: imageCategorie.ENERGIE_RENOUVELABLE
+    categorie: imageCategorie.ENERGIE_RENOUVELABLE,
+    valeur: 4
 };
 
 // 30

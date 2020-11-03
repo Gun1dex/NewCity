@@ -1,19 +1,23 @@
 import { Plateau } from './plateau.js';
 import { Menu } from './menu.js';
+import { Objectif } from './objectif.js';
 
 
 export class IHM {
     plateau;
     menu;
+    objectif;
 
     constructor() {}
 
     init() {
         this.plateau = new Plateau();
         this.menu = new Menu();
+        this.objectif = new Objectif();
 
         this.plateau.initPlateau();
         this.menu.initMenu();
+        this.objectif.initObjectif();
     }
 
     afficherPlateau() {
@@ -40,5 +44,21 @@ export class IHM {
             })
         });
         document.getElementById("affichage_menu").innerHTML = html;
+    }
+
+    afficherObjectif() {
+        const objectif = this.objectif.getObjectif();
+        var html = "";
+
+        objectif.forEach(element => {
+            const couleur = element.accompli === true ? "green" : "none";
+            html += `<p style="color:${couleur}">element.nom`;
+            html += `<br>Avancement :${element.progression}</p>`;
+        });
+        document.getElementById("affichage_objectif").innerHTML = html;
+    }
+
+    calculerAvancement() {
+        this.objectif.calculerAvancement(this.plateau);
     }
 }
