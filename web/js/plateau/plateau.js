@@ -1,8 +1,7 @@
-import { mock_plateau } from "../mocks/mock-plateau";
-import { ICase } from "../models/case";
+import { mock_plateau } from "../mocks/mock-plateau.js";
 
 export class Plateau {
-    tableau: ICase[][] = [];
+    tableau = [];
 
     constructor() {}
 

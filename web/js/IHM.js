@@ -1,7 +1,7 @@
-import { Plateau } from './plateau/plateau';
+import { Plateau } from './plateau/plateau.js';
 
 export class IHM {
-    plateau: Plateau;
+    plateau;
 
     constructor() {}
 
@@ -18,6 +18,7 @@ export class IHM {
             colonne.forEach(ligne => {
                 html += `<img src="${ligne.imageUrl}">`;
             })
+            html += "<br>";
         });
         document.getElementById("affichage_jeu").innerHTML = html;
     }
