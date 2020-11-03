@@ -76,10 +76,10 @@ export class Plateau {
                         element = elem.eauHautGauche;
                         break;
                     case 45:
-                        element = elem.eauBas;
+                        element = elem.eauHaut;
                         break;
                     case 46:
-                        element = elem.eauHaut;
+                        element = elem.eauBas;
                         break;
                     case 47:
                         element = elem.eauDroite;
