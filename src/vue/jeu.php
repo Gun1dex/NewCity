@@ -8,21 +8,18 @@ ob_start();
         <h1>Page du jeu</h1>
         <button><a href="index.php?pade=accueil">Accueil</a></button>
     </div>
-    <div class="column">
-        objectif
-    </div>
 </div>
 <div class="columns mobile">
     <div class="column is-2">
         <div id="affichage_menu">
         </div>
     </div>
-    <div class="column is-10" style="text-align:center;">
-
-        <div style="line-height:0px; background-color:#80be1f;height:100%; width:53%;" id="affichage_jeu">
+    <div class="column is-9" style="text-align:center;">
+        <div style="line-height:0px; background-color:#80be1f;" id="affichage_jeu">
         </div>
-
-
+    </div>
+    <div class="column is-1">
+        objectif
     </div>
 
 </div>
