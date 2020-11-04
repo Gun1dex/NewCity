@@ -26,3 +26,8 @@
     height: 500px;
     overflow: auto;
 }
+
+#scrollPlateau{
+    overflow-y: auto;
+    overflow-x: auto;
+}

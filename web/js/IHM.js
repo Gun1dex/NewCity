@@ -1,7 +1,7 @@
 import { Plateau } from './plateau.js';
 import { Menu } from './menu.js';
 import { Objectif } from './objectif.js';
-
+import {elements} from './mocks/mock-elements.js';
 
 export class IHM {
     plateau;
@@ -68,7 +68,10 @@ export class IHM {
     }
 
     changerImage(destI, destJ, origineI) {
-        console.log("Alors", destI, destJ, origineI);
+        const element = elements[origineI];
+        this.plateau.replaceImg(destI,destJ,element);
+        this.afficherPlateau();
+        this.afficherObjectif();
     }
     
 }

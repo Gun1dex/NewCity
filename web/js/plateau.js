@@ -111,4 +111,8 @@ export class Plateau {
     getTableau() {
         return this.tableau;
     }
+
+    replaceImg(i,j,element){
+        this.tableau[i][j] = element;
+    }
 }

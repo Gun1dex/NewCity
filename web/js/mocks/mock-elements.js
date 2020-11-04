@@ -219,3 +219,36 @@ export const eauGauche = {
     imageUrl: "./img/jeu/eau/eauGauche.png",
     categorie: imageCategorie.EAU
 };
+
+export var elements = [
+    herbe,
+    arbre,
+    maison,
+    ville,
+    villeFleurie,
+    usine,
+    panneau_solaire,
+    centrale_nucleaire,
+    eolienne,
+    foret,
+    route_horizontale,
+    route_verticale,
+    carrefour,
+    virageDroiteBas,
+    virageDroiteHaut,
+    virageGaucheBas,
+    virageGaucheHaut,
+    eau,
+    eauBas,
+    eauHaut,
+    eauDroite,
+    eauGauche,
+    eauHautDroite,
+    eauHautGauche,
+    eauBasDroite,
+    eauBasGauche,
+    routeTDroite,
+    routeTGauche,
+    routeTHaut,
+    routeTBas
+]
