@@ -24,10 +24,12 @@ export class IHM {
         const tableau = this.plateau.getTableau();
         var html = "";
         var i = 0;
+        
         tableau.forEach(colonne => {
             var j = 0;
             colonne.forEach(ligne => {
-                html += `<img src="${ligne.imageUrl}" style="height:40px" ondrop="deposer(event)" ondragover="permettreDepot(event)" draggable="false" id="img_${i}_${j}">`;
+                
+                html += `<img src="${ligne.imageUrl}" style="width:3.3%;" ondrop="deposer(event)" ondragover="permettreDepot(event)" draggable="false" id="img_${i}_${j}">`;
                 j++;
             })
             html += "<br>";
