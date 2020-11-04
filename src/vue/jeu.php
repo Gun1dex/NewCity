@@ -4,7 +4,7 @@ ob_start();
 
 ?>
 
-<script type="text/javascript" src="./js/dragAndDrop.js"></script>
+<script type="module" src="./js/jeu.js"></script>
 
 <div id="div2" ondrop="deposer(event)" ondragover="permettreDepot(event)" style="height:50px; width:50px; border: 1px solid black;"></div>
 
@@ -32,7 +32,7 @@ ob_start();
 
 </div>
 
-<script type="module" src="./js/jeu.js"></script>
+
 <?php
 
 $contenu = ob_get_clean();
