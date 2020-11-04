@@ -18,6 +18,6 @@ function deposer(event) {
     event.target.innerHTML = document.getElementById(data);
 
     console.log("div2", event.dataTransfer.getData("div2")) // PK t'es empty
-    console.log(data) // PK t'es empty
+    console.log("ID", event.target) // PK t'es empty
     event.target.innerHTML = "lol"
 }

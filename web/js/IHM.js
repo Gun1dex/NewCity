@@ -52,8 +52,8 @@ export class IHM {
 
         objectif.forEach(element => {
             const couleur = element.accompli === true ? "green" : "none";
-            html += `<p style="color:${couleur}">element.nom`;
-            html += `<br>Avancement :${element.progression}</p>`;
+            html += `<p style="color:${couleur}">${element.nom}`;
+            html += `<br>Avancement : ${element.progression}</p>`;
         });
         document.getElementById("affichage_objectif").innerHTML = html;
     }
