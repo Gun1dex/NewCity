@@ -1,6 +1,6 @@
 import * as IHM_module from "./IHM.js";
-import * as DgNDr from "./dragAndDrop.js";
 
+var idSelectElement = null;
 var ihm = new IHM_module.IHM();
 ihm.init();
 ihm.afficherPlateau();
@@ -8,18 +8,23 @@ ihm.afficherMenu();
 ihm.afficherObjectif();
 ihm.calculerAvancement();
 
-export function trainer(event){
-    /* DgNDr.trainer(event); */
-    console.log("test");
+function trainer(event) {
+    var idImg = event.target.id.split('_');
+    idSelectElement = idImg[1];
 }
 
-export function permettreDepot(event){
-   /*  DgNDr.permettreDepot(event); */
-    console.log("test");
+function permettreDepot(event) {
+    event.preventDefault();
 }
 
-export function deposer(event){
-    /* DgNDr.deposer(event); */
-    console.log("test");
+function deposer(event) {
+    event.preventDefault();
+    var coord = event.target.id.split('_');
+    var i = coord[1];
+    var j = coord[2];
+    ihm.changerImage(i, j, idSelectElement);
 }
 
+window.trainer = trainer;
+window.permettreDepot = permettreDepot;
+window.deposer = deposer;

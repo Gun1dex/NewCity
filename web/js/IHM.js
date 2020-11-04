@@ -67,5 +67,8 @@ export class IHM {
         this.objectif.calculerAvancement(this.plateau);
     }
 
+    changerImage(destI, destJ, origineI) {
+        console.log("Alors", destI, destJ, origineI);
+    }
     
 }
