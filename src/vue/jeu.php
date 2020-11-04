@@ -9,10 +9,10 @@ ob_start();
 <div class="columns">
     <div class="column">
         <h1>Page du jeu</h1>
-        <button><a href="index.php?pade=accueil">Accueil</a></button>
+        <button><a href="index.php?page=accueil">Accueil</a></button>
     </div>
 </div>
-<div class="columns mobile">
+<div class="columns is-mobile">
     <div class="column is-2" id="scrollMenu">
         <div id="affichage_menu">
         </div>
