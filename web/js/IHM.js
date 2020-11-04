@@ -23,12 +23,15 @@ export class IHM {
     afficherPlateau() {
         const tableau = this.plateau.getTableau();
         var html = "";
-
+        var i = 0;
         tableau.forEach(colonne => {
+            var j = 0;
             colonne.forEach(ligne => {
-                html += `<img src="${ligne.imageUrl}" style="height:40px" ondrop="deposer(event)" ondragover="permettreDepot(event)">`;
+                html += `<img src="${ligne.imageUrl}" style="height:40px" ondrop="deposer(event)" ondragover="permettreDepot(event)" draggable="false" id="img_${i}_${j}">`;
+                j++;
             })
             html += "<br>";
+            i++;
         });
         document.getElementById("affichage_jeu").innerHTML = html;
     }
@@ -36,12 +39,14 @@ export class IHM {
     afficherMenu() {
         const menu = this.menu.getMenu();
         var html = "";
-
+        var i = 0;
         menu.forEach(colonne => {
             colonne.forEach(ligne => {
                 html += `${ligne.nom}`;
-                html += `<br><img src="${ligne.imageUrl}" draggable="true" ondragstart="trainer(event)" style='height:50px'><br>`;
+                html += `<br><img src="${ligne.imageUrl}" draggable="true" ondragstart="trainer(event)" id="imgM_${i}" style='height:50px'><br>`;
+                i++;
             })
+
         });
         document.getElementById("affichage_menu").innerHTML = html;
     }
@@ -61,4 +66,9 @@ export class IHM {
     calculerAvancement() {
         this.objectif.calculerAvancement(this.plateau);
     }
+
+    changerImage(destI, destJ, origineI) {
+        console.log("Alors", destI, destJ, origineI);
+    }
+    
 }
