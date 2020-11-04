@@ -129,6 +129,34 @@ export const virageGaucheHaut = {
     categorie: imageCategorie.ROUTE
 };
 
+// 37
+export const routeTDroite = {
+    nom: "Route en T",
+    imageUrl: "./img/jeu/routes/routeTDroite.png",
+    categorie: imageCategorie.ROUTE
+};
+
+// 38
+export const routeTGauche = {
+    nom: "Route en T",
+    imageUrl: "./img/jeu/routes/routeTGauche.png",
+    categorie: imageCategorie.ROUTE
+};
+
+// 39
+export const routeTHaut = {
+    nom: "Route en T",
+    imageUrl: "./img/jeu/routes/routeTHaut.png",
+    categorie: imageCategorie.ROUTE
+};
+
+// 50
+export const routeTBas = {
+    nom: "Route en T",
+    imageUrl: "./img/jeu/routes/routeTBas.png",
+    categorie: imageCategorie.ROUTE
+};
+
 // 40
 export const eau = {
     nom: "Eau",

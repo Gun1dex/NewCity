@@ -32,7 +32,11 @@ export class Menu {
             mock.eauHautDroite,
             mock.eauHautGauche,
             mock.eauBasDroite,
-            mock.eauBasGauche
+            mock.eauBasGauche,
+            mock.routeTDroite,
+            mock.routeTGauche,
+            mock.routeTHaut,
+            mock.routeTBas
         ]
         this.tableau.push(elements);
     }

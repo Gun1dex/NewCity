@@ -60,6 +60,18 @@ export class Plateau {
                     case 36:
                         element = elem.virageGaucheHaut;
                         break;
+                    case 37:
+                        element = elem.routeTDroite;
+                        break;
+                    case 38:
+                        element = elem.routeTGauche;
+                        break;
+                    case 39:
+                        element = elem.routeTHaut;
+                        break;
+                    case 50:
+                        element = elem.routeTBas;
+                        break;
                     case 40:
                         element = elem.eau;
                         break;
