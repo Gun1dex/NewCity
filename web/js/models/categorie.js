@@ -1,5 +1,5 @@
 export const imageCategorie = {
-    RIEN: "rien",
+    RIEN: "vegetation",
     BATIMENT: "batiment",
     VEGETATION: "vegetation",
     POLLUTION: "pollution",

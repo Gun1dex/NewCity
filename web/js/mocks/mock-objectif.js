@@ -8,5 +8,10 @@ export var mock_objectif = [
         nom: "Atteindre 70% d'énergie renouvelable",
         progression: 0,
         accompli: false
+    },
+    {
+        nom: "Atteindre 50% de végétation",
+        progression: 0,
+        accompli: false
     }
 ];

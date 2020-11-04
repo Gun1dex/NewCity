@@ -58,7 +58,7 @@ export class IHM {
         objectif.forEach(element => {
             const couleur = element.accompli === true ? "green" : "none";
             html += `<p style="color:${couleur}">${element.nom}`;
-            html += `<br>Avancement : ${element.progression}</p>`;
+            html += `<br>Avancement : ${element.progression} %</p>`;
         });
         document.getElementById("affichage_objectif").innerHTML = html;
     }
@@ -70,6 +70,7 @@ export class IHM {
     changerImage(destI, destJ, origineI) {
         const element = elements[origineI];
         this.plateau.replaceImg(destI,destJ,element);
+        this.objectif.actualiserObjectifs(this.plateau, element);
         this.afficherPlateau();
         this.afficherObjectif();
     }
