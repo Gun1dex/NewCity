@@ -6,3 +6,4 @@ ihm.afficherPlateau();
 ihm.afficherMenu();
 ihm.afficherObjectif();
 ihm.calculerAvancement();
+

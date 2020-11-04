@@ -8,7 +8,7 @@ export class IHM {
     menu;
     objectif;
 
-    constructor() {}
+    constructor() { }
 
     init() {
         this.plateau = new Plateau();
@@ -23,10 +23,10 @@ export class IHM {
     afficherPlateau() {
         const tableau = this.plateau.getTableau();
         var html = "";
-        
+
         tableau.forEach(colonne => {
             colonne.forEach(ligne => {
-                html += `<img src="${ligne.imageUrl}" style='height:40px'>`;
+                html += `<img src="${ligne.imageUrl}" style="height:40px" ondrop="deposer(event)" ondragover="permettreDepot(event)">`;
             })
             html += "<br>";
         });
@@ -40,7 +40,7 @@ export class IHM {
         menu.forEach(colonne => {
             colonne.forEach(ligne => {
                 html += `${ligne.nom}`;
-                html += `<br><img src="${ligne.imageUrl}" style='height:50px'><br>`;
+                html += `<br><img src="${ligne.imageUrl}" draggable="true" ondragstart="trainer(event)" style='height:50px'><br>`;
             })
         });
         document.getElementById("affichage_menu").innerHTML = html;

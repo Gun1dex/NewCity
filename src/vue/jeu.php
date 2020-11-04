@@ -3,6 +3,12 @@
 ob_start();
 
 ?>
+
+<script type="text/javascript" src="./js/dragAndDrop.js"></script>
+
+<div id="div2" ondrop="deposer(event)" ondragover="permettreDepot(event)" style="height:50px; width:50px; border: 1px solid black;"></div>
+
+
 <div class="columns">
     <div class="column">
         <h1>Page du jeu</h1>
