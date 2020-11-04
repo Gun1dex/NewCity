@@ -16,7 +16,7 @@ ob_start();
     </div>
 </div>
 <div class="columns mobile">
-    <div class="column is-2">
+    <div class="column is-2" id="scrollMenu">
         <div id="affichage_menu">
         </div>
     </div>
