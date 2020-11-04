@@ -55,12 +55,13 @@ export class IHM {
 
     afficherObjectif() {
         const objectif = this.objectif.getObjectif();
-        var html = "";
+        console.log(this.objectif.getProgressionTotal())
+        var html = `Progression des objectifs<br><progress value="${this.objectif.getProgressionTotal()}" max="100"></progress><br><br>`;
 
         objectif.forEach(element => {
             const couleur = element.accompli === true ? "green" : "none";
-            html += `<p style="color:${couleur}">${element.nom}`;
-            html += `<br>Avancement : ${element.progression} %</p>`;
+            html += `<p style="color:${couleur}">${element.nom}<br>`;
+            html += `<progress value="${element.progression}" max="100"></progress>`;
         });
         document.getElementById("affichage_objectif").innerHTML = html;
     }

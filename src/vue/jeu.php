@@ -23,7 +23,6 @@ ob_start();
         </div>
     </div>
     <div class="column is-2">
-        Objectif
         <div id="affichage_objectif">
         </div>
     </div>

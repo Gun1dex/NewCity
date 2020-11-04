@@ -238,6 +238,10 @@ export var elements = [
     virageDroiteHaut,
     virageGaucheBas,
     virageGaucheHaut,
+    routeTDroite,
+    routeTGauche,
+    routeTHaut,
+    routeTBas,
     eau,
     eauBas,
     eauHaut,
@@ -246,9 +250,5 @@ export var elements = [
     eauHautDroite,
     eauHautGauche,
     eauBasDroite,
-    eauBasGauche,
-    routeTDroite,
-    routeTGauche,
-    routeTHaut,
-    routeTBas
+    eauBasGauche
 ]
