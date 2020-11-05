@@ -15,3 +15,21 @@ export var mock_objectif = [
         accompli: false
     }
 ];
+
+export var mock_objectif2 = [
+    {
+        nom: "Planter 15 arbres",
+        progression: 0,
+        accompli: false
+    },
+    {
+        nom: "Moins de 15% de pollution",
+        progression: 0,
+        accompli: false
+    },
+    {
+        nom: "Planter 10 forêts et mettre 10 espaces d'eau",
+        progression: 0,
+        accompli: false
+    }
+];

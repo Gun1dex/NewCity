@@ -25,6 +25,11 @@ function deposer(event) {
     ihm.changerImage(i, j, idSelectElement);
 }
 
+function changerNiveau() {
+    ihm.changerNiveau();
+}
+
 window.trainer = trainer;
 window.permettreDepot = permettreDepot;
 window.deposer = deposer;
+window.changerNiveau = changerNiveau;

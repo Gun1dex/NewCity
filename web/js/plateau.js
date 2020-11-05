@@ -1,13 +1,16 @@
-import * as plateau from "./mocks/mock-plateau.js";
 import * as elem from "./mocks/mock-elements.js";
 
 export class Plateau {
-    tableau = [];
+    tableau;
+    niveau;
 
     constructor() { }
 
-    initPlateau() {
-        plateau.mock_plateau.forEach(ligne => {
+    initPlateau(plateau, niveau) {
+        this.tableau = [];
+        this.niveau = niveau;
+
+        plateau.forEach(ligne => {
             let nouvelleLigne = [];
             ligne.forEach(colonne => {
                 let element;
@@ -112,7 +115,7 @@ export class Plateau {
         return this.tableau;
     }
 
-    replaceImg(i,j,element){
+    replaceImg(i, j, element) {
         this.tableau[i][j] = element;
     }
 }
