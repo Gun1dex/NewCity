@@ -15,7 +15,7 @@ ob_start();
 
 <div class="columns is-mobile is-centered">
     <div class="column is-2" id="scrollMenu">
-        <div id="affichage_menu">
+        <div id="affichage_menu" class="testetete">
         </div>
     </div>
     <div class="column is-8">

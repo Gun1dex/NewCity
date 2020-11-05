@@ -208,3 +208,10 @@ article {
 .noneColor:hover{
     color: black;
 }
+
+.testetete {
+    display: grid;  
+    grid-gap: 5px;  
+    grid-template-columns: repeat(auto-fit, 70px);
+    grid-template-rows: repeat(2, 200px); 
+}

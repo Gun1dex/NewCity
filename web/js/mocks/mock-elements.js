@@ -2,7 +2,7 @@ import { imageCategorie } from '../models/categorie.js';
 
 // 0
 export const herbe = {
-    nom: "Vide",
+    nom: "Herbe",
     imageUrl: "./img/jeu/fonts/herbe.png",
     categorie: [
         imageCategorie.RIEN
