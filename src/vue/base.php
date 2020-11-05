@@ -19,7 +19,7 @@ header('Location : localhost/NewCity/web/index.php');
 
     <section class="accueil">
         <div class="columns is-mobile is-centered">
-            <div class="column is-half" id="textCenter">
+            <div class="column" id="textCenter">
                 <img src="./img/accueil/banner_accueil2.png" class="imgBanner" alt="banniere">
             </div>
         </div>
@@ -48,7 +48,7 @@ header('Location : localhost/NewCity/web/index.php');
 
     </section>
 
-    <section class="section flexible">
+    <section class="section flexible bg1">
         <?php echo $contenu ?>
     </section>
 
