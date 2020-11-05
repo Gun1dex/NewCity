@@ -20,7 +20,7 @@ header('Location : localhost/NewCity/web/index.php');
     <section class="accueil">
         <div class="columns is-mobile is-centered">
             <div class="column is-half" id="textCenter">
-                <img src="../web/img/accueil/banner_accueil2.png" class="imgBanner" alt="banniere">
+                <img src="./img/accueil/banner_accueil2.png" class="imgBanner" alt="banniere">
             </div>
         </div>
         <?php
