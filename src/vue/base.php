@@ -8,7 +8,7 @@
         <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
         <link rel="stylesheet" href="css/style.css">
         <!-- <link rel="stylesheet" href="css/debug.css"> -->
-        <title>NewCity </title>
+        <title>EcoCity </title>
     </head>
 
     <body class="main">
@@ -16,7 +16,7 @@
         <section class="accueil">
             <div class="columns is-mobile is-centered">
                 <div class="column is-half" id="textCenter">
-                    <img src="../web/img/accueil/banner_accueil.png" class="imgBanner" alt="banniere">
+                    <img src="../web/img/accueil/banner_accueil2.png" class="imgBanner" alt="banniere">
                 </div>
             </div>
         </section>
