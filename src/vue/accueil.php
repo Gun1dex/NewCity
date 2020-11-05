@@ -30,7 +30,7 @@ ob_start();
                 <div class="column is-half" id="textCenter">
                     <div class="wrapper">
                         <a class="cta" href="index.php?page=sandbox">
-                            <span><p class="verticalCenter">Sandbox</p></span>
+                            <span><p class="verticalCenter">SandBox</p></span>
                             <span>
                                 <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                     <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">

@@ -228,7 +228,7 @@ export class Objectif {
     }
 
     calculerTauxPollution(pollution, total) {
-        this.taux_pollution = pollution * 10 / total;
+        this.taux_pollution = pollution / total;
     }
 
     getObjectif() {
