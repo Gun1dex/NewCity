@@ -155,52 +155,6 @@ article {
     line-height: 50px;
 }
 
-@keyframes rotate {
-    from {
-        -webkit-transform: rotate(0deg);
-    }
-    to {
-        -webkit-transform: rotate(360deg);
-    }
-}
-/* 
-.gear {
-    -webkit-animation-name: rotate;
-            animation-name: rotate;
-    -webkit-animation-duration: 0.5s;
-            animation-duration: 0.5s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
-} */
-
-#loading {
-    width:10%;
-    /* height:50px;
-    margin:50px;
-    background: url('../web/img/jeu/retourAccueil.png'); */
-    
-    /* -webkit-animation: rotation 2s infinite linear; */
-    -webkit-animation-name: rotation;
-            animation-name: rotation;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
-}
-
-@keyframes rotation {
-    from {
-            -webkit-transform: rotate(0deg);
-    }
-    to {
-            -webkit-transform: rotate(360deg);
-    }
-}
-
 .noneColor{
     color: black;
 }
@@ -215,3 +169,31 @@ article {
     grid-template-columns: repeat(auto-fit, 70px);
     grid-template-rows: repeat(2, 200px); 
 }
+
+.btn {
+    display: inline-block;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.625rem;
+    letter-spacing: 0.3em;
+    color: rgba(223,190,106,0.7);
+    border-radius: 0;
+    padding: 18px 80px 20px;
+    transition: all 0.7s ease-out;
+    background: linear-gradient(270deg, rgba(223,190,106,0.8), rgba(146,111,52,0.8), rgba(34,34,34,0), rgba(34,34,34,0));
+    background-position: 1% 50%;
+    background-size: 300% 300%;
+    text-decoration: none;
+    margin: 0.625rem;
+    border: none;
+    border: 1px solid rgba(223,190,106,0.3);
+  }
+  
+  .btn:hover {
+    color: #fff;
+    border: 1px solid rgba(223,190,106,0);
+    color: $white;
+    background-position: 99% 50%;
+  }
