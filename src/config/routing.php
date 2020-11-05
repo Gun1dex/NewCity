@@ -4,6 +4,7 @@ function getPage(){
 
     $lesPages['accueil']="actionAccueil";
     $lesPages['jeu']="actionJeu";
+    $lesPages['sandbox']="actionSandbox";
 
     if(isset($_GET['page'])){
         $page = $_GET['page'];
