@@ -6,10 +6,9 @@ ob_start();
 
 <script type="module" src="./js/jeu.js"></script>
 
-
 <div class="columns is-mobile is-centered">
     <div class="column is-2" id="scrollMenu">
-        <div id="affichage_menu" class="testetete">
+        <div id="affichage_menu" class="grille_menu">
         </div>
     </div>
     <div class="column is-8">
@@ -21,12 +20,7 @@ ob_start();
         <div id="affichage_objectif">
         </div>
     </div>
-
 </div>
-
-<!--  -->
-
-
 
 <?php
 

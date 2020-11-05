@@ -1,11 +1,11 @@
 import * as IHM_module from "./IHM.js";
 
+var pageCourante = document.location.href.split("page=")[1];
 var idSelectElement = null;
-var ihm = new IHM_module.IHM();
+var ihm = new IHM_module.IHM(pageCourante);
+
 ihm.init();
-ihm.afficherPlateau();
-ihm.afficherMenu();
-ihm.afficherObjectifs();
+ihm.afficherContenu();
 
 function trainer(event) {
     var idImg = event.target.id.split('_');

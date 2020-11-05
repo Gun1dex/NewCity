@@ -9,17 +9,25 @@ export class IHM {
     plateau;
     menu;
     objectif;
+    pageCourante;
 
-    constructor() { }
+    constructor(pageCourante) {
+        this.pageCourante = pageCourante;
+    }
 
     init() {
         this.plateau = new Plateau();
         this.menu = new Menu();
-        this.objectif = new Objectif();
 
-        this.plateau.initPlateau(mock_plt.mock_plateau, 1);
+        if (this.pageCourante === "jeu") {
+            this.plateau.initPlateau(mock_plt.mock_plateau, 1);
+            this.objectif = new Objectif();
+            this.initObjectif();
+        } else {
+            this.plateau.initPlateau(mock_plt.mock_plateau3, 3);
+        }
+
         this.menu.initMenu();
-        this.initObjectif();
     }
 
     initObjectif() {
@@ -27,6 +35,14 @@ export class IHM {
             this.objectif.initObjectif(mock_obj.mock_objectif);
         } else if (this.plateau.niveau === 2) {
             this.objectif.initObjectif(mock_obj.mock_objectif2);
+        }
+    }
+
+    afficherContenu() {
+        this.afficherPlateau();
+        this.afficherMenu();
+        if (this.pageCourante === "jeu") {
+            this.afficherObjectifs();
         }
     }
 
@@ -75,21 +91,19 @@ export class IHM {
         });
 
         if (this.objectif.getProgressionTotal() === 100) {
-            if(this.plateau.niveau === 1) {
+            if (this.plateau.niveau === 1) {
                 html += `<br><button onclick="changerNiveau()">Niveau suivant</button>`;
             } else if (this.plateau.niveau === 2) {
                 html += `<br><p>Félicitation vous avez accompli tous les objectifs !</p>`;
             }
-        } 
+        }
 
         document.getElementById("affichage_objectif").innerHTML = html;
     }
 
     afficherObjectifs() {
-        if(this.plateau.niveau === 1 || this.plateau.niveau === 2) {
-            this.calculerAvancement();
-            this.afficherObjectif();
-        }
+        this.calculerAvancement();
+        this.afficherObjectif();
     }
 
     calculerAvancement() {
@@ -101,7 +115,7 @@ export class IHM {
         this.plateau.replaceImg(destI, destJ, element);
         this.afficherPlateau();
 
-        if(this.plateau.niveau === 1 || this.plateau.niveau === 2) {
+        if (this.plateau.niveau === 1 || this.plateau.niveau === 2) {
             this.objectif.actualiserObjectifs(this.plateau, element);
             this.afficherObjectif();
         }
