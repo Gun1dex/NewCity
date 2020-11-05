@@ -3,44 +3,53 @@
 ob_start();
 
 ?>
-<div>
-    <h1>Projet EcoCity ("Imaginer la ville de demain...")</h1>
+<div class="container">
+    <div class="columns is-mobile is-centered">
+        <div class="column is-5">
+            <p class="textAccueil is-size-5">Pour lancer le jeu, cliquer sur le bouton "Jouer"</p>
+        </div>
 
-    <p>
-    Support : Jeu flash
-    </p>
+        <figure class="image ">
+            <img class="imgAccueil" src="img/tutoriel/Jouer.gif" style="max-width: 300px; " alt="image de l'accueil">
+        </figure>
 
-    <h1>Détail du projet</h1>
+    </div>
+    <hr>
+    <div class="columns is-mobile is-centered">
+        <figure class="image">
+            <img class="imgAccueil" src="img/tutoriel/Placer.gif" style="max-width: 300px;max-height: 300px;" alt="image de l'accueil">
+        </figure>
+        <div class="column is-5">
+            <p class="textAccueil is-size-5">Pour jouer il suffit de choisir un objet dans la liste de gauche puis de le glisser sur le plateau de jeu comme sur l'image ci-contre.
 
-    <p>
-    EcoCity est un jeu flash sur web à but éducatif / ludique, permettant la sensibilisation des utilisateurs au énergies renouvelables / réduction des énergies polluantes.
-    </p>
+            </p>
+        </div>
+    </div>
+    <hr>
 
-    <h1>Le but</h1>
+    <div class="columns is-mobile is-centered">
+        <div class="column is-5">
+            <p class="textAccueil is-size-5">Pour finir le jeu il faut remplir tout les objectifs pour d'abord passer au niveau 2 et enfin après avoir finis le niveau c'est la victoire.</p>
+        </div>
 
-    <p>
-    Modifier la ville de départ pour en faire une ville plus “verte” et atteindre les objectifs définis. L’objectif étant d'arriver à “l’équilibre” des énergies.
-    </p>
+        <figure class="image ">
+            <img class="imgAccueil" src="img/tutoriel/Suivant.gif" style="max-width: 300px;" alt="image de l'accueil">
+        </figure>
 
-    <h1>Comment jouer ?</h1>
+    </div>
+    <hr>
+    <div class="columns is-mobile is-centered">
+        <figure class="image">
+            <img class="imgAccueil" src="img/tutoriel/Sandbox.gif" style="max-width: 300px;max-height: 300px;" alt="image de l'accueil">
+        </figure>
+        <div class="column is-5">
+            <p class="textAccueil is-size-5">Vous pouvez aussi a créer la ville que vous voulez dans notre mode Sandbox.
 
-    <p>
-    L’utilisateur possède des objets à placer sur le plateau de jeu et doit, soit en placer des “propre” (tel que des arbres, forêts, panneaux solaires, etc…) 
-    soit retirer des objets polluants (tel que des centrales nucléaires, des usines, etc …)
-    </p>
+            </p>
+        </div>
+    </div>
+    <hr>
 
-    <h1>Technologies utilisées</h1>
-
-    <p>
-    - Java / PHP / CSS / HTML
-    - WinSrv2019 / Hébergement Web
-    </p>
-
-    <h1>Services utilisés</h1>
-
-    <p>
-    - SSH / SFTP / DNS / SSL / WAMP
-    </p>
 </div>
 
 <?php

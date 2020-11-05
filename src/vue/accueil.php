@@ -6,7 +6,7 @@ ob_start();
 
 <div class="columns is-mobile is-centered">
     <div class="column is-half" id="textCenter">
-        <figure>
+        <figure class="nuage">
             <h1 class="title">EcoCity</h1>
             <div class="columns is-mobile is-centered">
                 <div class="column is-half" id="textCenter">
