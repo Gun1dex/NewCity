@@ -17,7 +17,7 @@ export class IHM {
         this.menu = new Menu();
         this.objectif = new Objectif();
 
-        this.plateau.initPlateau(mock_plt.mock_plateau, 1);
+        this.plateau.initPlateau(mock_plt.mock_plateau2, 2);
         this.menu.initMenu();
         this.initObjectif();
     }
