@@ -39,7 +39,7 @@ export const maison = {
 
 // 11
 export const ville = {
-    nom: "Ville",
+    nom: "Immeuble",
     imageUrl: "./img/jeu/batiments/ville.png",
     categorie: [
         imageCategorie.BATIMENT,
@@ -49,7 +49,7 @@ export const ville = {
 
 // 12
 export const villeFleurie = {
-    nom: "Ville fleurie",
+    nom: "Immeuble fleurie",
     imageUrl: "./img/jeu/batiments/ville-fleurie.png",
     categorie: [
         imageCategorie.BATIMENT,
