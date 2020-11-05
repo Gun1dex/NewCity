@@ -54,7 +54,7 @@ export class IHM {
         var i = 0;
         menu.forEach(colonne => {
             colonne.forEach(ligne => {
-                html += `<div>${ligne.nom}`;
+                html += `<div>${ligne.nom}<br>`;
                 html += `<img src="${ligne.imageUrl}" draggable="true" ondragstart="trainer(event)" id="imgM_${i}" style='height:50px'></div>`;
                 i++;
             })

@@ -166,7 +166,8 @@ article {
 .testetete {
     display: grid;  
     grid-gap: 5px;  
-    grid-template-columns: repeat(auto-fit, 70px);
+    padding: 2px;
+    grid-template-columns: repeat(auto-fit, 80px);
     grid-template-rows: repeat(2, 100px); 
 }
 
