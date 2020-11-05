@@ -108,7 +108,7 @@ export class Objectif {
             foretEtEauProgression = this.liste[2].progression;
         }
 
-        this.progressionTotal = (planterArbreProgression + + pollutionProgression + + foretEtEauProgression) / 2;
+        this.progressionTotal = (planterArbreProgression + + pollutionProgression + + foretEtEauProgression) / 3;
     }
 
     objectifPlanterArbre(index, obj) {

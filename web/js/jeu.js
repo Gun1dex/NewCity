@@ -5,8 +5,7 @@ var ihm = new IHM_module.IHM();
 ihm.init();
 ihm.afficherPlateau();
 ihm.afficherMenu();
-ihm.calculerAvancement();
-ihm.afficherObjectif();
+ihm.afficherObjectifs();
 
 function trainer(event) {
     var idImg = event.target.id.split('_');
