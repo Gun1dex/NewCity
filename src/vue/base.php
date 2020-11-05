@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+<?php
+header('Location : localhost/NewCity/web/index.php');
+?>
 
 <head>
     <meta charset="utf-8">
@@ -9,6 +12,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/debug.css"> -->
     <title>EcoCity </title>
+
 </head>
 
 <body class="main">
@@ -20,18 +24,27 @@
             </div>
         </div>
         <?php
-        if ($_GET['page'] == 'accueil') {
-        } else {
-        ?>
-            <div class="columns is-mobile is-centered">
+
+        if (isset($_GET['page'])){
+            if($_GET['page']== 'accueil'){
+
+            }
+            else{
+                ?>
+                <div class="columns is-mobile is-centered">
                 <div class="column is-half" id="textCenter">
-                    <button class="btn"><a href="index.php?page=accueil" class="noneColor"><br>Accueil</a></button>
+                    <a href="index.php?page=accueil" class="noneColor"><button class="btn"><br>Accueil</button></a>
                     <!-- <img id="loading" src="../web/img/jeu/retourAccueil.png"><div id="loading"></div> -->
                 </div>
             </div>
-        <?php
+                <?php
+            }
+        }
+        else{
+
         }
         ?>
+        
 
     </section>
 
