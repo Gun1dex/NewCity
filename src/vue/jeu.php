@@ -5,10 +5,11 @@ ob_start();
 ?>
 
 <script type="module" src="./js/jeu.js"></script>
-<div class="columns is-mobile">
-    <div class="column">
+<div class="columns is-mobile is-centered">
+    <div class="column is-half" id="textCenter">
         <h1>Page du jeu</h1>
-        <button><a href="index.php?page=accueil">Accueil</a></button>
+        <a href="index.php?page=accueil" class="noneColor"><img id="loading" src="../web/img/jeu/retourAccueil.png"><br>Accueil</a>
+        <!-- <img id="loading" src="../web/img/jeu/retourAccueil.png"><div id="loading"></div> -->
     </div>
 </div>
 

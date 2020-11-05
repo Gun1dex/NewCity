@@ -1,30 +1,210 @@
-.accueil{
-    background-color: #00103c;
+.accueil {
+    /* background-color: #00103c; */
     width: auto;
 }
 
-.imgBanner{
+.imgBanner {
     width: 100%;
     height: auto;
 }
 
-#textCenter{
+#textCenter {
     text-align: center;
 }
 
-.mainMenu{
-    background: url("../img/accueil/nuclearCentral.jpg") no-repeat center;
+.mainMenu {
     border-color: black;
     border-style: dotted;
     -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  max-height: 450px;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    max-height: 450px;
 }
 
-#scrollMenu{
+#scrollMenu {
     height: 500px;
     overflow: auto;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.cta {
+    display: flex;
+    padding: 10px 45px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: black;
+    background: #85C1E9;
+    transition: 1s;
+    box-shadow: 6px 6px 0 black;
+    transform: skewX(-15deg);
+    vertical-align: middle;
+}
+
+.cta:focus {
+    outline: none;
+}
+
+.cta:hover {
+    transition: 0.5s;
+    box-shadow: 10px 10px 0 #145A32;
+}
+
+.cta span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 0px;
+}
+
+.cta:hover span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 45px;
+}
+
+span {
+    transform: skewX(15deg)
+}
+
+span:nth-child(2) {
+    width: 20px;
+    margin-left: 30px;
+    position: relative;
+    top: 12%;
+}
+
+/**************SVG****************/
+
+path.one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+}
+
+path.two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+}
+
+.cta:hover path.three {
+    animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover path.one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover path.two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+}
+
+/* SVG animations */
+
+@keyframes color_anim {
+    0% {
+        fill: white;
+    }
+    50% {
+        fill: green;
+    }
+    100% {
+        fill: white;
+    }
+}
+
+/******* Animation Nuage *********/
+
+figure {
+    width: 100%;
+    margin: 0;
+    padding: 20px 0 20px 0;
+    position: relative;
+    left: auto;
+    bottom: auto;
+    overflow: hidden;
+    background: url(http://res.cloudinary.com/duqzvuawc/image/upload/c_scale,h_424/v1508813537/clouds_tile_efhbuh.jpg) center;
+    animation: clouds_animation 75s linear infinite;
+}
+
+@keyframes clouds_animation {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -2122px 0;
+    }
+}
+
+article {
+    width: 70%;
+    margin: 40px auto 0 auto;
+    padding: 0px;
+    position: absolute;
+}
+
+.verticalCenter {
+    line-height: 50px;
+}
+
+@keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+/* 
+.gear {
+    -webkit-animation-name: rotate;
+            animation-name: rotate;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+} */
+
+#loading {
+    width:10%;
+    /* height:50px;
+    margin:50px;
+    background: url('../web/img/jeu/retourAccueil.png'); */
+    
+    /* -webkit-animation: rotation 2s infinite linear; */
+    -webkit-animation-name: rotation;
+            animation-name: rotation;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+}
+
+@keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(360deg);
+    }
+}
+
+.noneColor{
+    color: black;
+}
+
+.noneColor:hover{
+    color: black;
+}
