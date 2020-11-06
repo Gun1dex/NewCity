@@ -138,12 +138,13 @@ export class Objectif {
     }
 
     objectifVegetation(index) {
+        console.log(this.taux_vegetation)
         if (this.liste[index].accompli === false) {
-            if (this.taux_vegetation >= 0.5) {
+            if (this.taux_vegetation >= 0.46) {
                 this.liste[index].progression = 100;
                 return true;
             } else {
-                this.liste[index].progression = (this.taux_vegetation * 100 / 0.5).toFixed(2);
+                this.liste[index].progression = (this.taux_vegetation * 100 / 0.46).toFixed(2);
                 return false;
             }
         } else {

@@ -10,7 +10,7 @@ export var mock_objectif = [
         accompli: false
     },
     {
-        nom: "Atteindre 50% de végétation",
+        nom: "Atteindre 46% de végétation",
         progression: 0,
         accompli: false
     }
